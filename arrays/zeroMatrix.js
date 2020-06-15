@@ -24,4 +24,4 @@ function swapZeros(matrix) {
     console.log(matrix);
 }
 
-swapZeros([[1, 0, 1, 1], [1, 1, 1, 1], [1, 1, 1, 0]]);
+swapZerosByLayers([[1, 0, 1, 1], [1, 1, 1, 1], [1, 1, 1, 0]]);
