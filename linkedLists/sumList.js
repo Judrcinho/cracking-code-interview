@@ -110,4 +110,3 @@ function addTwoNumbersStraighOrder(firstNode, secondNode) {
 
 let answer = addTwoNumbersStraighOrder(firstList.head, secondList.head);
 answer.print();
-
