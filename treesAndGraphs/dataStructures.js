@@ -16,8 +16,8 @@ class Node {
 }
 
 class BinarySearchTree {
-    constructor() {k
-        this.root = null;
+    constructor(root = null) {
+        this.root = root;
     }
 
     insert(data) {
@@ -189,22 +189,4 @@ class Graph {
     }
 }
 
-module.export = { Tree, BinarySearchTree, Graph }
-
-let graph = new Graph(5);
-let vertexes = ['A', 'B', 'C', 'D', 'E'];
-
-for (vertex of vertexes) {
-    graph.addVertex(vertex);
-}
-
-graph.addEdge('A', 'B');
-graph.addEdge('A', 'C');
-graph.addEdge('C', 'D');
-graph.addEdge('B', 'E');
-graph.addEdge('E', 'A');
-
-console.log(graph.adjacencyList);
-
-graph.depthFirstTraversal('A');
-graph.breadthFirstTraversal('A');
+module.exports = { Tree, BinarySearchTree, Graph, Node }
